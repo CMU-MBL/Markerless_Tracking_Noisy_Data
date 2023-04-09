@@ -113,15 +113,10 @@ def main(dtype='train'):
             # Write log
             write_log(rmse_acc, rmse_gyr, rmse_kp3d, subj, action)
     
-    if dtype == 'train':
-        for key in outfile.keys():
-            outfile[key] = torch.cat(outfile[key], dim=0)
-            
     torch.save(outfile, cfg.PATHS.TC_LABEL[dtype])
 
 
 if __name__ == '__main__':
     viz = False
     amass_joint_idxs = list(range(24)); amass_joint_idxs[-1] = 37
-    # main('train')
     main('test')

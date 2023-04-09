@@ -4,19 +4,15 @@ class CONSTANTS:
 
 class PATHS:
     TC_BASE = 'dataset/TotalCapture'
-    # TC_CALIB = 'dataset/TotalCapture/calibration.pt'
     TC_CALIB = 'dataset/TotalCapture/calibration.cal'
     TC_DETECTION = 'dataset/TotalCapture/detection/cpn'
-    
     AMASS_BASE = 'dataset/AMASS'
     SMPL = 'dataset/body_models/smpl'
-    
     TC_LABEL = {
-        'train': 'dataset/HumanPose/VIF/totalcapture_test_4cams_train.pt',
-        'test': 'dataset/HumanPose/VIF/totalcapture_test_4cams_test.pt'
+        'val': 'dataset/HumanPose/VIF/totalcapture_val.pt',
+        'test': 'dataset/HumanPose/VIF/totalcapture_test.pt'
     }
-    # AMASS_LABEL = 'dataset/HumanPose/VIF/amass_train.pt'
-    AMASS_LABEL = 'dataset/HumanPose/VIF/amass_train_prev.pt'
+    AMASS_LABEL = 'dataset/HumanPose/VIF/amass_train.pt'
     
 
 class SMPL:
@@ -50,7 +46,6 @@ class SMPL:
         'OP LSmallToe', 'OP LHeel', 'OP RBigToe', 'OP RSmallToe', 'OP RHeel',
     ]
     
-    # MAIN_JOINTS = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13, 14, 15, 16, 17, 18, 19]
     MAIN_JOINTS = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
     REGRESSOR = 'dataset/body_models/J_regressor_coco.npy'
 

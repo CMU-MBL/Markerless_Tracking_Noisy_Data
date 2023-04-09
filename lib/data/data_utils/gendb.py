@@ -117,8 +117,6 @@ def process_imu_data(smpl, output, pose, subj, action, winsize=7, viz=False):
 
 def process_video_data(joints, subj, action, viz=False):
     # Read camera calibration
-    # calibs = torch.load(cfg.PATHS.TC_CALIB)['cameras']
-    # R = transforms.rotation_6d_to_matrix(calibs['r6d'].cpu()).numpy()
     calibs = read_calibration(cfg.PATHS.TC_CALIB)
     R = calibs['R'].cpu().numpy()
     T = calibs['T'].cpu().numpy()
