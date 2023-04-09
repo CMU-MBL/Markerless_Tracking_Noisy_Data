@@ -1,5 +1,8 @@
 # FS_Video_IMU_Fusion
 This is the PyTorch implementation of 3-D human motion tracking from videos and/or IMUs.
+
+![framework](./assets/framework.jpg)
+
 <br><br><br>
 
 | Sample result |
