@@ -1,0 +1,17 @@
+numpy
+scikit-image
+matplotlib
+imageio-ffmpeg
+tensorboard
+timm
+
+chumpy
+opencv-python
+
+smplx
+tqdm
+yacs
+contextlib2
+joblib
+configargparse
+einops

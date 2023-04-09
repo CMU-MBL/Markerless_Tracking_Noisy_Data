@@ -1,0 +1,20 @@
+name: 'imunet'
+logdir: 'logger/imunet/'
+model-type: 'imu'
+
+epoch: 50
+seq-length: 50
+batch-size: 16
+num-workers: 5
+write-freq: 100
+joint-type: 'COCO17'
+sex: 'neutral'
+
+lw-pose: 5e1
+
+checkpoint: ''
+calib-noise: 0.15
+
+drop-rate: 0.1
+attn-drop-rate: 0.
+attn-drop-path-rate: 0.1

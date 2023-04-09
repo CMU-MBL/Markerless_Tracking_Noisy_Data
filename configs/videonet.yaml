@@ -1,0 +1,22 @@
+name: 'videonet'
+logdir: 'logger/videonet/'
+model-type: 'video'
+
+epoch: 50
+seq-length: 50
+batch-size: 16
+num-workers: 5
+write-freq: 100
+joint-type: 'COCO17'
+sex: 'neutral'
+
+lw-kp3d: 1e3
+lw-pose: 5e1
+lw-betas: 5e-2
+
+checkpoint: ''
+keypoints-noise: 8e-3
+# drop-rate: 0.1
+drop-rate: 0.0
+attn-drop-rate: 0.
+attn-drop-path-rate: 0.1
